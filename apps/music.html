@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    body {
+      margin: 0;
+      background: #0d0d0f;
+      color: white;
+      font-family: sans-serif;
+    }
+
+    .app-header {
+      background: #1a1a1d;
+      padding: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+    }
+
+    .app-header a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .app-body {
+      padding: 15px;
+    }
+
+    .song-title {
+      margin: 15px 0 5px;
+      font-size: 16px;
+    }
+
+    audio {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="app-window">
+  <div class="app-header">
+    <span>Music</span>
+    <a class="back" href="../index.html">← Back</a>
+  </div>
+
+  <div class="app-body">
+    <h3>🎧 Fake Music Player</h3>
+
+    <p class="song-title">Song 1</p>
+    <audio controls>
+      <source src="../media/song1.ogg" type="audio/OGA">
+    </audio>
+
+    <p class="song-title">Song 2</p>
+    <audio controls>
+      <source src="../media/song2.ogg" type="audio/OGA">
+    </audio>
+
+    <p class="song-title">Song 3</p>
+    <audio controls>
+      <source src="../media/song3.ogg" type="audio/OGA">
+    </audio>
+
+  </div>
+</div>
+
+</body>
+</html>
